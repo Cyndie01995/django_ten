@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{blog.title}} Profile</title>
+  </head>
+  <body>
+    <h1>{{post.title}} Profile</h1>
+    <p><strong>Title:</strong> {{post.title}}</p>
+    <p><strong>Content:</strong> {{post.content}}</p>
+    <p><strong>Country:</strong> {{post.country}}</p>
+    <p><strong>Created_at:</strong> {{post.created_at}}</p>
+    <p><strong>Updated_at:</strong> {{post.updated_at}}</p>
+
+    <a href="{% url 'blog:post_list'%}" .> Go back to posts</a>
+  </body>
+</html>
